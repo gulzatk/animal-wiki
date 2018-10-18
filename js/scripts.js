@@ -1,11 +1,20 @@
 
 $(document).ready(function() {
-  var age = parseInt(prompt("How old are you?"));
+  $("#turtle-pic").click(function() {
+    $("#turtles").show();
+    $("#snakes").hide();
+    $("#insects").hide();
+    });
 
-  if (age >= 18) {
-    $('#votingInfo').show();
-  }
-  else {
-    $('#under-18').show();
-  }
+  $("#snake-pic").click(function() {
+    $("#snakes").show();
+    $("#turtles").hide();
+    $("#insects").hide();
+
+    });
+  $("#insect-pic").click(function() {
+    $("#insects").show();
+    $("#snakes").hide();
+    $("#turtles").hide();
+    });
 });
